@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+    <head>
+        <title> Jogo da Velha </title>
+        <meta charset="utf-8"/>
+        <link rel="stylesheet" href="estilo.css"/>
+
+        <script type="text/javascript" src="externo.js"></script>
+
+    </head>
+
+    <style>
+        img{
+            object-fit: contain;
+            width: 140px;
+            height: 140px;
+        }
+    </style>
+
+    <body>
+
+        <form align="center">
+            <label id="label"> Jogar contra o Computador:</label>
+            <br/>
+            <td><input type="radio" id="pc" name="pc" value="SIM"/>
+                <label id="lab"> SIM </label>
+                <input type="radio" id="pc" name="pc" value="NAO" checked/>
+                <label id="labe"> NÃO </label>
+            </form>
+       
+        <table border="0" align="center"> <!-- width="600" height="500" -->
+            <tbody>
+                <tr>
+                    <td id="h1"><img src="img/transp.png" alt="imagem" id="c1" onclick="return checkjogo(this.id)"/></td>
+                    <td id="h2"><img src="img/transp.png" alt="imagem" id="c2" onclick="return checkjogo(this.id)"/></td>
+                    <td id="h3"><img src="img/transp.png" alt="imagem" id="c3" onclick="return checkjogo(this.id)"/></td>
+                </tr>
+                <tr>
+
+                    <td id="h4"><img src="img/transp.png" alt="imagem" id="c4" onclick="return checkjogo(this.id)"/></td>
+                    <td id="h5"><img src="img/transp.png" alt="imagem" id="c5" onclick="return checkjogo(this.id)"/></td>
+                    <td id="h6"><img src="img/transp.png" alt="imagem" id="c6" onclick="return checkjogo(this.id)"/></td>
+                </tr>
+                <tr>
+                    <td id="h7"><img src="img/transp.png" alt="imagem" id="c7" onclick="return checkjogo(this.id)"/></td>
+                    <td id="h8"><img src="img/transp.png" alt="imagem" id="c8" onclick="return checkjogo(this.id)"/></td>
+                    <td id="h9"><img src="img/transp.png" alt="imagem" id="c9" onclick="return checkjogo(this.id)"/></td>
+                </tr>
+            </tbody>
+        </table>
+
+                    <a href="index.html"><button align="center"> VOLTAR </button></a>
+                    <br/>
+                    <br/>
+                    <p id="msg" align="center"></p>
+                    
+
+
+    </body>
+   
+</html>
